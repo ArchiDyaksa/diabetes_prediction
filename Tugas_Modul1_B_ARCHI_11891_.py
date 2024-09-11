@@ -11,8 +11,7 @@ if os.path.exists(model_path):
     with open(model_path, 'rb') as f:
         loaded_model = pickle.load(f)
 
-    svm_model = loaded_model[0]
-    rf_model = loaded_model[1]
+    rf_model = loaded_model[0]
 
     #bagian Streamlit App
     st.title("Prediksi Diabetes")
